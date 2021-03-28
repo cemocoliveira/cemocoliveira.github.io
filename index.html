@@ -1,528 +1,710 @@
+
 <!doctype html>
+
 <html lang="pt-br">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="description" content="Tabela de dias e horários das reuniões por turma, com links de acesso.">
-	<meta property="og:title" content="Aulas Virtuais - Horários e links" />
-	<meta property="og:url" content="https://cemocoliveira.github.io/" />
-	<meta property="og:description" content="Tabela de dias e horários das reuniões por turma, com links de acesso.">
-	<meta property="og:type" content="article" />
-	<meta property="og:image"
-		content="//lh3.googleusercontent.com/TdNokLfok3VTwtD0WBkkiCi5pKvBUzAIgXjHHVM0CAW56ZUPfNBreKh601THS_yE5IqKkOYO8Q=w128-h128-e365">
-	<meta property="og:locale:alternate" content="pt_BR" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Horários e links das aulas</title>
-	<style>
-		.table td {
-			text-align: center;
-		}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Tabela de dias e horários das reuniões por turma, com links de acesso.">
+    <meta property="og:title" content="Aulas Virtuais - Horários e links" />
+    <meta property="og:url" content="https://cemocoliveira.github.io/" />
+    <meta property="og:description" content="Tabela de dias e horários das reuniões por turma, com links de acesso.">
+    <meta property="og:type" content="article" />
+    <meta property="og:image"
+        content="//lh3.googleusercontent.com/TdNokLfok3VTwtD0WBkkiCi5pKvBUzAIgXjHHVM0CAW56ZUPfNBreKh601THS_yE5IqKkOYO8Q=w128-h128-e365">
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Horários e links das aulas</title>
+    <style>
+        .table td {
+            text-align: center;
+        }
 
-		.table {
-			border-radius: 5px;
-			width: 30%;
-			float: none;
-		}
+        .table {
+            border-radius: 5px;
+            width: 30%;
+            float: none;
+        }
 
-		img.center {
-			display: block;
-			margin: 0 auto;
-		}
+        img.center {
+            display: block;
+            margin: 0 auto;
+        }
 
-		.table-condensed>thead>tr>th,
-		.table-condensed>tbody>tr>th,
-		.table-condensed>tfoot>tr>th,
-		.table-condensed>thead>tr>td,
-		.table-condensed>tbody>tr>td,
-		.table-condensed>tfoot>tr>td {
-			padding: 5px;
-		}
-	</style>
-	<script>
-		$('.collapse').collapse()
-	</script>
+        .table-condensed>thead>tr>th,
+        .table-condensed>tbody>tr>th,
+        .table-condensed>tfoot>tr>th,
+        .table-condensed>thead>tr>td,
+        .table-condensed>tbody>tr>td,
+        .table-condensed>tfoot>tr>td {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        $('.collapse').collapse()
+    </script>
 </head>
 
 <body>
-	<div class="container">
-		<img src="meet.png" class="center" alt="Google Meet" style="width: 20%; height: auto;">
-		<p style="text-align:center">
-		<h5 style="text-align:center">CEMOC</h5>
-		<h6 style="text-align:center">Horário e Links das Aulas Virtuais</h6>
-		<h3 style="color:red;text-align:center">Em manutenção</h3>
-		</p>
-		<p style="text-align:center">
-			Selecione a turma.
-		</p>
-	</div>
-	<div class="accordion" id="accordionExample">
+    <div class="container">
+        <img src="/static/classes/img/logo.png" class="center" alt="CEMOC" style="width: 20%; height: auto;">
+        <p style="text-align:center">
+        <h5 style="text-align:center">CEMOC</h5>
+        <h6 style="text-align:center">Horário e Links das Aulas Virtuais</h6>
+        <h3 style="color:red;text-align:center">Em manutenção</h3>
+        </p>
+        <p style="text-align:center">
+            Selecione o turno e a turma.
 
-		<div class="">
-			<div class="" id="headingOne">
-				<h2 class="mb-0">
-					<div class="col text-center">
-						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne"
-							aria-expanded="true" aria-controls="collapseOne">
-							6º ANO
-						</button>
-					</div>
-				</h2>
-			</div>
+        </p>
+    </div>
 
-			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-				<!--class= "collapse show"-->
-				<div class="card-body">
-					<h5 style="text-align:center">6º ano</h5>
-					<p style="text-align:center"> 
-						Em breve as aulas de Ciências estarão de volta à grade. 
-					</p>
-					<!--<p style="text-align:center"> <b>Aula de matemática</b> (profª Jamilly) 09/10 - 15:10h
-						<a href="https://meet.google.com/nyi-wtxp-ggy" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-					</p>-->
-					<table class="table table-striped table-bordered table-condensed"
-						style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
-						<thead>
-							<tr>
-								<th scope="col">DIA</th>
-								<th scope="col">HORÁRIO</th>
-								<th scope="col">DISCIPLINA / PROF.</th>
-								<th scope="col">TURMA</th>
-								<th scope="col">ACESSAR SALA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">SEG</th>
-								<td class="align-middle">08:30h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A, B, C e D</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/agu-jrqh-ykj" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="align-middle">QUI</th>
-								<td class="align-middle">08:30h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A, B, C e D</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/agu-jrqh-ykj" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-						-->
-							<tr>
-								<th scope="row" class="align-middle">QUI</th>
-								<td class="align-middle">14:00h</td>
-								<td class="align-middle">Inglês (Daiane)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/pqe-ppkk-fes" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+    <div class="accordion" id="accordionTurno">
+        <div class="card">
+            <!-- CARD ---- CONTÉM CABEÇALHO + CONTEUDO-->
+            <div class="" id="headingMat">
+                <!--COMEÇO DO CABEÇALHO-->
+                <h2 class="mb-0">
+                    <div class="col text-center">
+                        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseMat"
+                            aria-expanded="true" aria-controls="collapseMat">
+                            MATUTINO
+                        </button>
+                    </div>
+                </h2>
+            </div>
+            <!--FIM DO CABEÇALHO-->
+            <div id="collapseMat" class="collapse" aria-labelledby="headingMat" data-parent="#accordionTurno">
+                <div class="card-body">
+                    <!--COMEÇO DO CONTEUDO (MATUTINO)-->
+                    <div class="accordion" id="accordionMat">
+                        
+                        <div class="card">
+                            <div class="" id="headingMat1">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat1"
+                                            aria-expanded="true" aria-controls="collapseMat1">
+                                            6º ano A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat1" class="collapse" aria-labelledby="headingMat1" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <th scope="row" class="align-middle">SEG</th>
+                                            <td class="align-middle"><!--HORÁRIO-->
+                                                08:00 - 09:40
+                                            </td>
+                                            <td class="align-middle">Ciências (Robson)</td>
+                                            <td class="align-middle">
+                                                
+                                                <a>Em breve aqui</a>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" class="align-middle">SEG</th>
+                                            <td class="align-middle"><!--HORÁRIO-->
+                                                10:00 - 10:50
+                                            </td>
+                                            <td class="align-middle">Português (Jorge)</td>
+                                            <td class="align-middle">
+                                                
+                                                <a>Em breve aqui</a>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat2">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat2"
+                                            aria-expanded="true" aria-controls="collapseMat2">
+                                            6º ano B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat2" class="collapse" aria-labelledby="headingMat2" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat3">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat3"
+                                            aria-expanded="true" aria-controls="collapseMat3">
+                                            7º ano A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat3" class="collapse" aria-labelledby="headingMat3" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat4">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat4"
+                                            aria-expanded="true" aria-controls="collapseMat4">
+                                            7º ano B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat4" class="collapse" aria-labelledby="headingMat4" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat5">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat5"
+                                            aria-expanded="true" aria-controls="collapseMat5">
+                                            8º ano A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat5" class="collapse" aria-labelledby="headingMat5" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat6">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat6"
+                                            aria-expanded="true" aria-controls="collapseMat6">
+                                            8º ano B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat6" class="collapse" aria-labelledby="headingMat6" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingMat7">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseMat7"
+                                            aria-expanded="true" aria-controls="collapseMat7">
+                                            9º ano A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseMat7" class="collapse" aria-labelledby="headingMat7" data-parent="#accordionMat">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--FIM DO CONTEUDO-->
+                </div>
+            </div>
+        </div>
+        <!--FIM DO CARD-->
+        <div class="card">
+            <!-- CARD ---- CONTÉM CABEÇALHO + CONTEUDO-->
+            <div class="" id="headingVesp">
+                <!--COMEÇO DO CABEÇALHO-->
+                <h2 class="mb-0">
+                    <div class="col text-center">
+                        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseVesp"
+                            aria-expanded="true" aria-controls="collapseVesp">
+                            VESPERTINO
+                        </button>
+                    </div>
+                </h2>
+            </div>
+            <!--FIM DO CABEÇALHO-->
+            <div id="collapseVesp" class="collapse" aria-labelledby="headingVesp" data-parent="#accordionTurno">
+                <div class="card-body">
+                    <!--COMEÇO DO CONTEUDO (MATUTINO)-->
+                    <div class="accordion" id="accordionVesp">
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp1">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp1"
+                                            aria-expanded="true" aria-controls="collapseVesp1">
+                                            6º ano C
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp1" class="collapse" aria-labelledby="headingVesp1" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp2">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp2"
+                                            aria-expanded="true" aria-controls="collapseVesp2">
+                                            6º ano D
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp2" class="collapse" aria-labelledby="headingVesp2" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp3">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp3"
+                                            aria-expanded="true" aria-controls="collapseVesp3">
+                                            7º ano C
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp3" class="collapse" aria-labelledby="headingVesp3" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp4">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp4"
+                                            aria-expanded="true" aria-controls="collapseVesp4">
+                                            8º ano C
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp4" class="collapse" aria-labelledby="headingVesp4" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp5">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp5"
+                                            aria-expanded="true" aria-controls="collapseVesp5">
+                                            9º ano B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp5" class="collapse" aria-labelledby="headingVesp5" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp6">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp6"
+                                            aria-expanded="true" aria-controls="collapseVesp6">
+                                            EJA 5ª e 6ª A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp6" class="collapse" aria-labelledby="headingVesp6" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingVesp7">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseVesp7"
+                                            aria-expanded="true" aria-controls="collapseVesp7">
+                                            EJA 7ª e 8ª A
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseVesp7" class="collapse" aria-labelledby="headingVesp7" data-parent="#accordionVesp">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--FIM DO CONTEUDO-->
+                </div>
+            </div>
+        </div>
+        <!--FIM DO CARD-->
+        <div class="card">
+            <!-- CARD ---- CONTÉM CABEÇALHO + CONTEUDO-->
+            <div class="" id="headingNot">
+                <!--COMEÇO DO CABEÇALHO-->
+                <h2 class="mb-0">
+                    <div class="col text-center">
+                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseNot"
+                            aria-expanded="true" aria-controls="collapseNot">
+                            NOTURNO
+                        </button>
+                    </div>
+                </h2>
+            </div>
+            <!--FIM DO CABEÇALHO-->
+            <div id="collapseNot" class="collapse" aria-labelledby="headingNot" data-parent="#accordionTurno">
+                <div class="card-body">
+                    <!--COMEÇO DO CONTEUDO (MATUTINO)-->
+                    <div class="accordion" id="accordionNot">
+                        
+                        <div class="card">
+                            <div class="" id="headingNot1">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseNot1"
+                                            aria-expanded="true" aria-controls="collapseNot1">
+                                            EJA 5ª e 6ª B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseNot1" class="collapse" aria-labelledby="headingNot1" data-parent="#accordionNot">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="" id="headingNot2">
+                                <!--COMEÇO DO CABEÇALHO-->
+                                <h2 class="mb-0">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseNot2"
+                                            aria-expanded="true" aria-controls="collapseNot2">
+                                            EJA 7ª e 8ª B
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseNot2" class="collapse" aria-labelledby="headingNot2" data-parent="#accordionNot">
+                                <div class="card-body"><!--AULAS -->
+                                    
+                                    <table class="table table-striped table-bordered table-condensed"
+                                    style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DIA</th>
+                                            <th scope="col">HORÁRIO</th>
+                                            <th scope="col">DISCIPLINA / PROF.</th>
+                                            <th scope="col">ACESSAR SALA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--FIM DO CONTEUDO-->
+                </div>
+            </div>
+        </div>
+        <!--FIM DO CARD-->
+    </div>
 
+    <p style="text-align:center; margin-top:30px">A sala será aberta minutos antes da aula.</p>
 
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="" id="headingTwo">
-				<h2 class="mb-0">
-					<div class="col text-center">
-						<button class="btn btn-primary collapsed" type="button" data-toggle="collapse"
-							data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							7º ANO
-						</button>
-					</div>
-				</h2>
-			</div>
-			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-				<div class="card-body">
-					<h5 style="text-align:center">7º ano</h5>
-					<p style="text-align:center"> 
-						Em breve as aulas de Ciências estarão de volta à grade.
-					</p>
-					<table class="table table-striped table-bordered table-condensed"
-						style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
-						<thead>
-							<tr>
-								<th scope="col">DIA</th>
-								<th scope="col">HORÁRIO</th>
-								<th scope="col">DISCIPLINA / PROF.</th>
-								<th scope="col">TURMA</th>
-								<th scope="col">ACESSAR SALA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">SEG</th>
-								<td class="align-middle">09:20h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A, B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/zsr-adju-wrv" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">TER</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/rof-nusr-sns" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">QUA</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/rof-nusr-sns" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<!--
-							<tr>
-								<th scope="row" class="align-middle">QUI</th>
-								<td class="align-middle">09:40h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A, B, e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/zsr-adju-wrv" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">QUI</th>
-								<td class="align-middle">13:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/rof-nusr-sns" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="align-middle">QUI</th>
-								<td class="align-middle">14:00h</td>
-								<td class="align-middle">Inglês (Daiane)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-								<!-- https://meet.google.com/mip-ogrj-mgv-->
-									<a href="https://meet.google.com/pqe-ppkk-fes" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-						
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="" id="headingThree">
-				<h2 class="mb-0">
-					<div class="col text-center">
-						<button class="btn btn-primary collapsed" type="button" data-toggle="collapse"
-							data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							8º ANO
-						</button>
-					</div>
-				</h2>
-			</div>
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-				<div class="card-body">
-
-					<h5 style="text-align:center">8º ano</h5>
-					<table class="table table-striped table-bordered table-condensed"
-						style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
-						<thead>
-							<tr>
-								<th scope="col">DIA</th>
-								<th scope="col">HORÁRIO</th>
-								<th scope="col">DISCIPLINA / PROF.</th>
-								<th scope="col">TURMA</th>
-								<th scope="col">ACESSAR SALA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">SEG</th>
-								<td class="align-middle">10:10h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/sth-sahu-gwy" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">TER</th>
-								<td class="align-middle">10:30h</td>
-								<td class="align-middle">Português (Danilo)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/gmw-waqw-qrx" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">TER</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oyh-rcdd-fwh" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">TER</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/zji-jzms-iyp" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">QUA</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oyh-rcdd-fwh" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">QUA</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/zji-jzms-iyp" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<!--
-							<tr>
-								<th scope="row" class="align-middle">QUI</th>
-								<td class="align-middle">10:50h</td>
-								<td class="align-middle">Ciências (Juliana)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/sth-sahu-gwy" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<!--
-							<tr>
-								<th class="align-middle" scope="row">QUI</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oyh-rcdd-fwh" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th class="align-middle" scope="row">QUI</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">B e C</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/zji-jzms-iyp" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="align-middle">SEX</th>
-								<td class="align-middle">14:00h</td>
-								<td class="align-middle">Inglês (Daiane)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/cmt-ojap-spo" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-										<!-- OBS Original: https://meet.google.com/sms-zbxk-ioe -->
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="" id="headingFour">
-				<h2 class="mb-0">
-					<div class="col text-center">
-						<button class="btn btn-primary collapsed" type="button" data-toggle="collapse"
-							data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-							9º ANO
-						</button>
-					</div>
-				</h2>
-			</div>
-			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-				<div class="card-body">
-					<h5 style="text-align:center">9º ano</h5>
-					<table class="table table-striped table-bordered table-condensed"
-						style="font-size: 13px; text-align:center; border:1px solid black !impportant;margin-left:auto;margin-right:auto;">
-						<thead>
-							<tr>
-								<th scope="col">DIA</th>
-								<th scope="col">HORÁRIO</th>
-								<th scope="col">DISCIPLINA / PROF.</th>
-								<th scope="col">TURMA</th>
-								<th scope="col">ACESSAR SALA</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th class="align-middle" scope="row">SEG</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/nng-ooms-cxv" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">TER</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oep-uikg-bds" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">QUA</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/nng-ooms-cxv" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">QUA</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oep-uikg-bds" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">QUI</th>
-								<td class="align-middle">14:30h</td>
-								<td class="align-middle">Ciências (Norberto)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/nng-ooms-cxv" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th class="align-middle" scope="row">QUI</th>
-								<td class="align-middle">15:15h</td>
-								<td class="align-middle">Matemática (Jaime)</td>
-								<td class="align-middle">A e B</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/oep-uikg-bds" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row" class="align-middle">SEX</th>
-								<td class="align-middle">14:00h</td>
-								<td class="align-middle">Inglês (Daiane)</td>
-								<td class="align-middle">A</td>
-								<td class="align-middle">
-									<a href="https://meet.google.com/cmt-ojap-spo" class="btn btn-sm btn-success"
-										target="_blank">
-										clique aqui</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	<p style="text-align:center; margin-top:30px">Sujeito a alterações.<br />
-		A sala será aberta minutos antes da aula.</p>
-	
-	<!-- Optional JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
